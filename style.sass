@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+
+* 
+  box-sizing: border-box
+
+body 
+  font-family: 'Roboto', sans-serif
+  background-color: #e5e5e5
+  display: flex
+  padding-top: 5rem
+  justify-content: center
+  overflow: hidden
+  margin: 0
+
+.row 
+  display: flex
+  width: 1500px
+  justify-content: space-around
+  margin-bottom: 1rem
+
+.col-header 
+  width: 150px
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36)
+  border-radius: 20px
+  padding: 0.8rem 1rem
+  color: #fff
+
+
+.item 
+  width: 500px
+  height: 500px
+  border: 1px solid #eee
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36)
+  border-radius: 20px
+  background-image: url('https://pngimg.com/uploads/anonymous_mask/anonymous_mask_PNG2.png')
+  padding: 0.8rem 1rem
+  color: #828282
+  text-align: center
+  cursor: grab
+  transition: all 1s
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  font-size: 25px
+  color: white
+  animation: anonimus 10s ease-in-out infinite
+  background-position: center
+
+
+.item:active 
+  cursor: grabbing
+
+
+.placeholder 
+  width: 500px
+  height: 500px
+  transition: all 1s
+  padding: 10px
+  position: relative
+
+.hz
+  width: 700px
+  height: 700px
+  background-image: url('https://i.ibb.co/s25f4nS/anominusqwe.png')
+  transition: all 1s
+  font-size: 25px
+  color: white
+  animation: anonimus_two 10s ease-in-out infinite
+  background-position: center
+  background-repeat: no-repeat
+  position: absolute
+  bottom: -110px
+
+.start 
+  background: linear-gradient(90deg, #301f2c 0%, #666666 179.25%)
+  text-align: center
+
+
+.progress 
+  background: linear-gradient(90deg, #301f2c 0%, #666666 179.25%)
+  text-align: center
+
+.done 
+  background: linear-gradient(90deg, #301f2c 0%, #666666 179.25%)
+  text-align: center
+.hold
+  border: 5px solid #eee
+
+.hide
+  display: none
+
+.hovered
+  border-top: 2px solid #8ed7ed
+
+@keyframes anonimus 
+  0% 
+    background-size: 100%
+  50%
+    background-size: 148%
+  100%
+    background-size: 100%
+
+@keyframes anonimus_two
+  0% 
+    background-size: 71%
+  50%
+    background-size: 105%
+  100%
+    background-size: 71%
